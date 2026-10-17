@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --fondo: #fdf8f3;
+    --tarjeta: #ffffff;
+    --principal: #be185d;
+    --estrella: #f59e0b;
+    --texto: #1f2937;
+}
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--fondo);
+    color: var(--texto);
+    padding: 24px 16px;
+}
+/*-------------------------------*/
+/*--|estilo_acuarela_artistica|--*/
+/*-------------------------------*/
+.contenedor {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+.encabezado {
+    margin-bottom: 20px;
+}
+.encabezado h1 {
+    color: var(--principal);
+    margin-bottom: 6px;
+}
+.encabezado p {
+    color: #6b7280;
+}
+.resumen {
+    display: flex;
+    gap: 12px;
+    max-width: 320px;
+    margin: 0 auto 16px;
+}
+.dato {
+    flex: 1;
+    padding: 10px;
+    background: var(--tarjeta);
+    border-radius: 10px;
+}
+.dato span {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--principal);
+}
+.dato small {
+    color: #6b7280;
+}
+/*----------------------------------*/
+/*--|estilo_filtros_de_la_galeria|--*/
+/*----------------------------------*/
+.filtros {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.filtro {
+    padding: 6px 16px;
+    border: 2px solid var(--principal);
+    border-radius: 20px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.filtro.activo {
+    background: var(--principal);
+    color: #ffffff;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.pintura {
+    background: var(--tarjeta);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+.pintura.oculta {
+    display: none;
+}
+/*------------------------------------*/
+/*--|estilo_lienzos_de_las_pinturas|--*/
+/*------------------------------------*/
+.lienzo {
+    height: 170px;
+}
+.lienzo-1 {
+    background:
+        radial-gradient(circle at 70% 35%, #fef08a 0 15%, transparent 40%),
+        linear-gradient(180deg, #fdba74, #f472b6 60%, #7c3aed);
+}
+.lienzo-2 {
+    background:
+        radial-gradient(circle at 30% 70%, #bbf7d0, transparent 50%),
+        radial-gradient(circle at 75% 30%, #5eead4, transparent 45%),
+        linear-gradient(180deg, #d1fae5, #15803d);
+}
+.lienzo-3 {
+    background:
+        radial-gradient(circle at 25% 25%, #bae6fd, transparent 45%),
+        linear-gradient(180deg, #e0f2fe, #0ea5e9 45%, #1e3a8a);
+}
+.lienzo-4 {
+    background:
+        radial-gradient(circle at 20% 80%, #c084fc, transparent 45%),
+        radial-gradient(circle at 80% 70%, #f9a8d4, transparent 45%),
+        linear-gradient(180deg, #e0f2fe, #ddd6fe 50%, #7e22ce);
+}
+/*----------------------------------------*/
+/*--|estilo_informacion_de_las_pinturas|--*/
+/*----------------------------------------*/
+.info {
+    padding: 12px;
+}
+.info h2 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+.info p {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+.acciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-----------------------------------------*/
+/*--|estilo_calificaciones_con_estrellas|--*/
+/*-----------------------------------------*/
+.estrellas button {
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    color: #d1d5db;
+    cursor: pointer;
+}
+.estrellas button.activa {
+    color: var(--estrella);
+}
+.corazon {
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.vacio {
+    display: none;
+    margin-bottom: 16px;
+    color: #6b7280;
+}
+.boton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #6b7280;
+    color: #ffffff;
+    cursor: pointer;
+}

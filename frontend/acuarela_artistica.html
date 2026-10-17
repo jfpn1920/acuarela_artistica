@@ -13,76 +13,113 @@
     <!--|estructuracion_acuarela_artistica|-->
     <!--------------------------------------->
     <main class="contenedor">
-        <!-- Encabezado con título y descripción -->
         <header class="encabezado">
             <h1>🎨 Acuarela Artística</h1>
             <p>Califica cada pintura con estrellas y marca tus favoritas.</p>
         </header>
-        <!-- Resumen: cantidad de favoritas y calificación promedio -->
+        <!------------------------------------->
+        <!--|resumen_de_favoritas_y_promedio|-->
+        <!------------------------------------->
         <section class="resumen">
-            <div class="dato"><span id="favoritas">0</span><small>Favoritas</small></div>
-            <div class="dato"><span id="promedio">–</span><small>Promedio</small></div>
+            <div class="dato">
+                <span id="favoritas">0</span>
+                <small>Favoritas</small>
+            </div>
+            <div class="dato">
+                <span id="promedio">–</span>
+                <small>Promedio</small>
+            </div>
         </section>
-        <!-- Botones para filtrar la galería (data-filtro guarda el valor) -->
         <nav class="filtros" id="filtros">
             <button class="filtro" data-filtro="todas">Todas</button>
             <button class="filtro" data-filtro="favoritas">❤️ Favoritas</button>
         </nav>
-        <!-- Galería con las cuatro pinturas -->
+        <!------------------------->
+        <!--|galeria_de_pinturas|-->
+        <!------------------------->
         <section class="galeria" id="galeria">
-            <!-- Pintura 1: Atardecer en el lago -->
             <article class="pintura" data-id="atardecer">
                 <div class="lienzo lienzo-1"></div>
                 <div class="info">
                     <h2>Atardecer en el lago</h2>
                     <p>Naranjas y rosados que se mezclan sobre el agua.</p>
                     <div class="acciones">
-                        <div class="estrellas"><button data-n="1">★</button><button data-n="2">★</button><button data-n="3">★</button><button data-n="4">★</button><button data-n="5">★</button></div>
+                        <div class="estrellas">
+                            <button data-n="1">★</button>
+                            <button data-n="2">★</button>
+                            <button data-n="3">★</button>
+                            <button data-n="4">★</button>
+                            <button data-n="5">★</button>
+                        </div>
                         <button class="corazon">🤍</button>
                     </div>
                 </div>
             </article>
-            <!-- Pintura 2: Bosque en la niebla -->
+            <!--------------------------------->
+            <!--|pintura_bosque_en_la_niebla|-->
+            <!--------------------------------->
             <article class="pintura" data-id="niebla">
                 <div class="lienzo lienzo-2"></div>
                 <div class="info">
                     <h2>Bosque en la niebla</h2>
                     <p>Verdes suaves que se difuminan entre la bruma.</p>
                     <div class="acciones">
-                        <div class="estrellas"><button data-n="1">★</button><button data-n="2">★</button><button data-n="3">★</button><button data-n="4">★</button><button data-n="5">★</button></div>
+                        <div class="estrellas">
+                            <button data-n="1">★</button>
+                            <button data-n="2">★</button>
+                            <button data-n="3">★</button>
+                            <button data-n="4">★</button>
+                            <button data-n="5">★</button>
+                        </div>
                         <button class="corazon">🤍</button>
                     </div>
                 </div>
             </article>
-            <!-- Pintura 3: Mar en calma -->
+            <!-------------------------->
+            <!--|pintura_mar_en_calma|-->
+            <!-------------------------->
             <article class="pintura" data-id="mar">
                 <div class="lienzo lienzo-3"></div>
                 <div class="info">
                     <h2>Mar en calma</h2>
                     <p>Azules profundos con destellos de luz turquesa.</p>
                     <div class="acciones">
-                        <div class="estrellas"><button data-n="1">★</button><button data-n="2">★</button><button data-n="3">★</button><button data-n="4">★</button><button data-n="5">★</button></div>
+                        <div class="estrellas">
+                            <button data-n="1">★</button>
+                            <button data-n="2">★</button>
+                            <button data-n="3">★</button>
+                            <button data-n="4">★</button>
+                            <button data-n="5">★</button>
+                        </div>
                         <button class="corazon">🤍</button>
                     </div>
                 </div>
             </article>
-            <!-- Pintura 4: Campo de lavanda -->
+            <!------------------------------>
+            <!--|pintura_campo_de_lavanda|-->
+            <!------------------------------>
             <article class="pintura" data-id="lavanda">
                 <div class="lienzo lienzo-4"></div>
                 <div class="info">
                     <h2>Campo de lavanda</h2>
                     <p>Manchas violetas y rosas bajo un cielo claro.</p>
                     <div class="acciones">
-                        <div class="estrellas"><button data-n="1">★</button><button data-n="2">★</button><button data-n="3">★</button><button data-n="4">★</button><button data-n="5">★</button></div>
+                        <div class="estrellas">
+                            <button data-n="1">★</button>
+                            <button data-n="2">★</button>
+                            <button data-n="3">★</button>
+                            <button data-n="4">★</button>
+                            <button data-n="5">★</button>
+                        </div>
                         <button class="corazon">🤍</button>
                     </div>
                 </div>
             </article>
         </section>
-        <!-- Mensaje que aparece cuando el filtro no muestra ninguna pintura -->
         <p class="vacio" id="vacio">Aún no tienes pinturas favoritas.</p>
-        <!-- Botón para borrar calificaciones y favoritas -->
-        <button id="btn-reiniciar" class="boton">Reiniciar galería</button>
+        <button id="btn-reiniciar" class="boton" type="button">
+            Reiniciar galería
+        </button>
     </main>
 </body>
 </html>
